@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
         color: '#0c4594',
         marginTop: 8,
     },
-    curso: {
+    frase: {
         fontSize: 16,
         color: '#0c4594',
         marginTop: 8,
