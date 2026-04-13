@@ -3,10 +3,10 @@ import { View, Text, StyleSheet } from 'react-native';
 export default function PerfilScreen() {
     return (
         <View style={styles.container}>
-            <Text style={styles.nome}>👤</Text>
-            <Text style={styles.turma}>Tela perfil</Text>
-            <Text style={styles.curso}>Informação </Text>
-            <Text style={styles.frase}>Informação </Text>
+            <Text style={styles.nome}>Emílio Henrique dos Santos Favoretto</Text>
+            <Text style={styles.turma}>2º Ano 2TDS1</Text>
+            <Text style={styles.curso}>Desenvolvimento de sistemas </Text>
+            <Text style={styles.frase}>Desenvolver sistemas é a arte de transformar lógica e café em soluções que facilitam a vida das pessoas, um ponto e vírgula por vez. </Text>
         </View>
     );
 }
@@ -17,19 +17,24 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#f0f4ff',
+        flexDirection: 'column'
     },
-    emoji: {
-        fontSize: 40,
-        marginBottom: 12,
+    nome: {
+        fontSize: 40
     },
-    text: {
+    turma: {
         fontSize: 28,
         fontWeight: 'bold',
         color: '#1e40af',
     },
-    subtitle: {
+    curso: {
         fontSize: 16,
-        color: '#64748b',
+        color: '#0c4594',
+        marginTop: 8,
+    },
+    curso: {
+        fontSize: 16,
+        color: '#0c4594',
         marginTop: 8,
     }
 });

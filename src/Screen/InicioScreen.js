@@ -3,12 +3,11 @@ import { View, Text, StyleSheet } from 'react-native';
 export default function InicioScreen() {
     return (
         <View style={styles.container}>
-            <Text style={styles.dsiciplina1}>Português</Text>
-            <Text style={styles.dsiciplina2}>Matematica</Text>
-            <Text style={styles.dsiciplina3}>Biologia</Text>
-            <Text style={styles.dsiciplina4}>Geografia</Text>
+            <Text style={styles.name}>Portal do Aluno</Text>
             <Text style={styles.text}>Bem-vindo</Text>
-            <Text style={styles.explicacao}></Text>
+            <Text style={styles.explicacao}>O app funciona como um assistente pessoal do estudante.
+                substituindo murais de papel e mensagens perdidas por uma interface intuitiva e organizada.
+            </Text>
         </View>
     );
 }
@@ -20,7 +19,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#f0f4ff',
     },
-    nome: {
+    name: {
         fontSize: 40,
         marginBottom: 12,
     },

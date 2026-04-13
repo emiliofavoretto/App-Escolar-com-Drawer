@@ -3,10 +3,10 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-import DisciplinaScreen from './src/Screen/DisciplinaScreen';
-import InicioScreen from './src/Screen/inicioScreen';
+import InicioScreen from './src/Screen/InicioScreen';
 import TarefasScreen from './src/Screen/TarefasScreen';
-import PerfilScreen from './src/Screen/perfilScreens';
+import PerfilScreen from './src/Screen/PerfilScreens';
+import DisciplinasScreen from './src/Screen/DisciplinasScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -38,7 +38,7 @@ export default function App() {
                     }}>
                     <Drawer.Screen name="Home" component={InicioScreen} />
                     <Drawer.Screen name="Perfil" component={PerfilScreen} />
-                    <Drawer.Screen name="Configurações" component={DisciplinaScreen} />
+                    <Drawer.Screen name="Configurações" component={DisciplinasScreen} />
                     <Drawer.Screen name="Configurações" component={TarefasScreen} />
                 </Drawer.Navigator>
             </NavigationContainer>
